@@ -5,7 +5,7 @@ import ServiceCart from "./ServiceCart";
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://car-doctors-server-gamma.vercel.app/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
